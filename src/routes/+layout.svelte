@@ -2,10 +2,13 @@
 	import Header from './Header.svelte';
 	import "../app.css";
 	import './styles.css';
+    import Carousel from '../lib/components/home/Carousel.svelte';
 </script>
 
 <div class="app">
 	<Header />
+
+	<Carousel/>
 
 	<main>
 		<slot />
