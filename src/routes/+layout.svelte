@@ -1,21 +1,25 @@
 <script>
-	import Header from './Header.svelte';
+	import Header from '../lib/components/Header.svelte';
 	import "../app.css";
 	import './styles.css';
-    import Carousel from '../lib/components/home/Carousel.svelte';
+    import Footer from '../lib/components/Footer.svelte';
 </script>
 
 <div class="app">
 	<Header />
 
-	<Carousel/>
-
-	<main>
+	<main class="flex-1 overflow-y-auto h-[calc(100vh-6rem)] ">
 		<slot />
+
+		<Footer/>
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	
 </div>
+
+<style>
+	.app{
+		@apply flex flex-col h-screen;
+	}
+</style>
 

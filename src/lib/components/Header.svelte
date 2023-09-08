@@ -1,10 +1,10 @@
 <script>
-    import Logo from '../lib/components/icons/Logo.svelte';
-    import MenuIcon from '../lib/components/icons/MenuIcon.svelte';
-    import SearchIcon from '../lib/components/icons/SearchIcon.svelte';
+    import Logo from './icons/Logo.svelte';
+    import MenuIcon from './icons/MenuIcon.svelte';
+    import SearchIcon from './icons/SearchIcon.svelte';
 </script>
 
-<header class="">
+<header class="h-24 sticky top-0 w-full left-0 z-10 bg-white">
 	<div class="topbar h-8 bg-slate-100">
 		<div class="flex items-center justify-end h-full text-black">
 			<a href="tel:1-800-555-5555" class="text-sm font-bold mr-2">1-800-555-5555</a>

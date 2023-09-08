@@ -13,7 +13,7 @@
 
     onMount(() => {
         const swiper = new Swiper('.swiper', {
-            modules: [Navigation, Pagination],
+            modules: [ Pagination],
 
             loop: true,
 
@@ -23,10 +23,10 @@
             },
 
             // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
         });
         swiper.init();
     });
@@ -52,8 +52,8 @@
     <div class="swiper-pagination"></div>
   
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
   
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
